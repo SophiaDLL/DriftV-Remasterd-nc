@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+  }
+    
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .bg {
+    position: relative;
+    background-image: url("../img/Loading_screen.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.car {
+    position: absolute;
+    bottom: 15px;
+    left: 30%;
+    width: 80px;
+    height: 80px;
+    animation: slideAcross 5s ease-in-out infinite;
+}
+
+@keyframes slideAcross {
+    0% {
+        left: 20%;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        left: 80%;
+        opacity: 0;
+    }
+}

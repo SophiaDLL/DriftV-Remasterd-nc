@@ -1,0 +1,300 @@
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../fonts/Oswald-Regular.eot");
+  src: url("../fonts/Oswald-Regular.eot#iefix") format("embedded-opentype"),
+    url("../fonts/Oswald-Regular.woff") format("woff"),
+    url("../fonts/Oswald-Regular.woff2") format("woff2"),
+    url("../fonts/Oswald-Regular.ttf") format("truetype"),
+    url("../fonts/Oswald-Regular.svg#webfont34M5alKg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Oswald-Light";
+  src: url("../fonts/Oswald-Light.eot");
+  src: url("../fonts/Oswald-Light.eot#iefix") format("embedded-opentype"),
+    url("../fonts/Oswald-Light.woff") format("woff"),
+    url("../fonts/Oswald-Light.woff2") format("woff2"),
+    url("../fonts/Oswald-Light.ttf") format("truetype"),
+    url("../fonts/Oswald-Light.svg#webfont34M5alKg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: none;
+}
+
+.driftDisplayTandem {
+  font-size: 20px;
+  position: absolute;
+  bottom:16%;
+  right: 48%;
+  text-align: left;
+  font-family: "Oswald-Light";
+  font-style: italic;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.driftDisplay {
+  font-size: 50px;
+  position: absolute;
+  bottom: 10%;
+  right: 48%;
+  font-family: "Oswald-Light";
+  font-style: italic;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+.driftDisplayMulti {
+  font-size: 30px;
+  position: absolute;
+  bottom: 7%;
+  right: 48%;
+  font-family: "Oswald-Light";
+  font-style: italic;
+  font-weight: 100;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+#containerSucces {
+  display: none;
+}
+
+.succesImage {
+  max-width: 20%;
+  height: 70px;
+  position: absolute;
+  top: 10%;
+  right: 50%;
+}
+.succesTitle {
+  font-size: 50px;
+  position: absolute;
+  top: 15%;
+  right: 48%;
+  font-family: "Oswald-Light"; 
+  font-style: italic;
+  font-weight: 100;
+  color: rgb(255, 196, 0);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+}
+.succesText {
+  font-size: 20px;
+  position: absolute;
+  top: 22%;
+  right: 44%;
+  font-family: "Oswald-Light";
+  font-style: italic;
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+
+  text-align: justify;
+  text-align-last: center;
+  overflow-wrap: normal;
+  word-break:keep-all;
+  width: 300px
+}
+
+.driftImage {
+  max-width: 20%;
+  height: 70px;
+  position: absolute;
+  bottom: 10%;
+  right: 37.5%;
+  filter: invert();
+  transform: rotate(180deg);
+}
+
+.joinButton {
+  position: absolute;
+  bottom: 10%;
+  left: 80%;
+  transform: translateX(-50%);
+}
+
+.navbar {
+  visibility: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Orbitron', sans-serif;
+  background: url('images/maxresdefault.jpg') no-repeat center center/cover;
+  background-size: cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#containerJoin {
+  position: absolute;
+  left: 70.5%;
+  bottom: 5%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer button {
+  font-size: 1.5em; 
+  border-radius: 20px;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #ff007f;
+  transition: 0.3s;
+  min-width: 250px; 
+  height: 35px;
+  text-align: center;
+}
+
+.buttonContainer button:hover {
+  background: white;
+  color: black;
+}
+
+nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#devUpdateModal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2em;
+  border-radius: 15px;
+  color: white;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 10px #ff007f;
+}
+
+#devUpdateModal h4 {
+  text-align: center;
+}
+
+#devUpdateModal .modal-content {
+  margin: 1em 0;
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+#devUpdateModal .closeButton {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #ff007f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#devUpdateModal .closeButton:hover {
+  background-color: #ff4c8f;
+}
+
+.hiddenContent {
+  display: none;
+}
+
+.game-logo {
+  position: absolute;
+  width: 23vw;
+  left: 84%;
+  bottom: 6%;
+  transform: translateX(-50%);
+}
+
+.version {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: sans-serif;
+  text-shadow: 2px 2px 6px #ff4c8f;
+}
+
+.collapsible-header {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  font-size: 1.2em !important;
+  padding: 1em !important;
+  border: none !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapsible-body {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  padding: 1em !important;
+}
+
+.collapsible-header .material-icons {
+  transition: transform 0.3s ease;
+}
+
+.collapsible-body {
+  padding-left: 20px;
+}
+
+.collapsible-header.active .material-icons {
+  transform: rotate(180deg);
+}
+
+.collapsible-body span {
+  font-size: 1rem !important; 
+}
+
+.collapsible li {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.collapsible-body li {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}

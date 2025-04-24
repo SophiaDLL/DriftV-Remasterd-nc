@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CMapParentTxds>
+ <txdRelationships>
+
+  <!--  --> <!--                  --> <!--  -->
+  <!--  --> <!--  MAP             --> <!--  -->  
+  <!--  --> <!--                  --> <!--  -->
+
+  <Item>
+    <parent>kushdrift_tex_2</parent>
+    <child>kushdrift_tex_1</child>
+  </Item>
+  <Item>
+    <parent>kushdrift_tex_3</parent>
+    <child>kushdrift_tex_2</child>
+  </Item>
+  <Item>
+    <parent>kushdrift_tex_4</parent>
+    <child>kushdrift_tex_3</child>
+  </Item>
+  <Item>
+    <parent>kushdrift_tex_5</parent>
+    <child>kushdrift_tex_4</child>
+  </Item>
+  <Item>
+    <parent>kushdrift_tex_6</parent>
+    <child>kushdrift_tex_5</child>
+  </Item>
+
+  <!--  --> <!--                  --> <!--  -->
+  <!--  --> <!--  MAP1            --> <!--  -->
+  <!--  --> <!--                  --> <!--  -->
+
+
+  </txdRelationships>
+</CMapParentTxds>
